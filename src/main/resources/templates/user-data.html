@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border: 2px solid black;
+            padding: 20px;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h4>User Name:</h4>
+            </td>
+            <td>
+                <h4 th:text="${user.name}"></h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Email ID:</h4>
+            </td>
+            <td>
+                <h4 th:text="${user.email}"></h4>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
